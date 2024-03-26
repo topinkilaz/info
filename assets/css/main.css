@@ -1648,6 +1648,24 @@ section {
   color: var(--color-primary);
 }
 
+
+
+
+.project-details ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+
+
+.project-details ul i {
+  font-size: 20px;
+  margin-right: 8px;
+  color: var(--color-primary);
+}
+
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/

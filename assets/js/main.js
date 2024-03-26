@@ -504,4 +504,73 @@ window.onload = function() {
     });
   });
 
- 
+
+function show(param_div_id,event){
+   var links = document.querySelectorAll('.services-list a');
+    for (var i = 0; i < links.length; i++) {
+        links[i].classList.remove('active');
+    }
+    
+    var targetLink = event.target;
+    targetLink.classList.add('active');
+  event.preventDefault(); 
+
+  var a = document.getElementById("reparacion");
+  var b = document.getElementById("mantenimiento")
+  var c = document.getElementById("instalacion")
+  var d = document.getElementById("consultoria")
+  var e = document.getElementById("serviciocl")
+
+  var f = document.getElementById("soporte")
+if(param_div_id==="reparacion"){
+
+a.style.display ="block";
+b.style.display ="none";
+c.style.display ="none";
+d.style.display ="none";
+e.style.display ="none";
+e.style.display ="none";
+f.style.display ="none";
+}
+else if(param_div_id==="mantenimiento"){
+  a.style.display ="none"
+  b.style.display ="block"
+  c.style.display ="none"
+  d.style.display ="none"
+  e.style.display ="none"
+  f.style.display ="none";
+}
+else if(param_div_id==="instalacion"){
+  a.style.display ="none"
+  b.style.display ="none"
+  c.style.display ="block"
+  d.style.display ="none"
+  e.style.display ="none"
+  f.style.display ="none";
+}
+else if(param_div_id==="consultoria"){
+  a.style.display ="none"
+  b.style.display ="none"
+  c.style.display ="none"
+  d.style.display ="block"
+  e.style.display ="none"
+  f.style.display ="none";
+}
+else if(param_div_id==="serviciocl"){
+  a.style.display ="none"
+  b.style.display ="none"
+  c.style.display ="none"
+  d.style.display ="none"
+  e.style.display ="block"
+  f.style.display ="none";
+}
+else {
+  a.style.display ="none"
+  b.style.display ="none"
+  c.style.display ="none"
+  d.style.display ="none"
+  e.style.display ="none"
+  f.style.display ="block";
+}
+
+}
